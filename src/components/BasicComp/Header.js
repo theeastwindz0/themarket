@@ -1,7 +1,7 @@
 import logoImage from '../../images/themarket.png'
 import '../CSS/Header.css'
 import Button from './Button'
-const Header = () => {
+const Header = (props) => {
 
     const buttons=[{
         title:'HOME',
@@ -20,6 +20,10 @@ const Header = () => {
         location:'about'
     }
 ]
+
+    //Function Call to life state up 
+    props.passLocation(buttons);
+
     return (
         <div className="Header">
             <img src={logoImage}></img>
