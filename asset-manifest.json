@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/themarket/static/css/main.947609c6.css",
+    "main.js": "/themarket/static/js/main.8a044374.js",
+    "static/media/themarket.png": "/themarket/static/media/themarket.3747d43c914cc83e2049.png",
+    "index.html": "/themarket/index.html",
+    "main.947609c6.css.map": "/themarket/static/css/main.947609c6.css.map",
+    "main.8a044374.js.map": "/themarket/static/js/main.8a044374.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.947609c6.css",
+    "static/js/main.8a044374.js"
+  ]
+}
