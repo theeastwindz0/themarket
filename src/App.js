@@ -16,14 +16,14 @@ function App() {
     }
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/themarket">
     <Header passLocation={CTPgetButtonLocation} />
 
     {/* <Header2/> */}
 
    
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' exact element={<Home/>}/>
       <Route path='/news' element={<News/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='*' element={<PageNotFound/>}/>
