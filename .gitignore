@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
+# My Fles
+
+/src/components/CSS/Header2.css
+/src/components/BasicComp/Header2.js
+
 # dependencies
 /node_modules
 /.pnp

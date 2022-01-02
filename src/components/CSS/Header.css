@@ -6,10 +6,15 @@
 }
 
 .Header{
-padding: 20px 10px;
-display: flex;
-justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: inherit;
+    z-index: 1;
 }
+
 .header__right{
     float: right;
     text-align: center;
@@ -23,12 +28,14 @@ justify-content: flex-end;
 }
 
 .header__logo{
-    font-size: 20px;
     padding: 20px;
     vertical-align: middle;
     text-align: center;
     font-size: 20px;
     margin-right: auto;
+    font-family: 'Holtwood one SC';
 }
+
+
 
 

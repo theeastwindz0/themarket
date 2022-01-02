@@ -1,0 +1,27 @@
+.Parallex{
+    /* background-image: url('../../images/Container__18.jpeg'); */
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    image-resolution: 1366px 768px;
+    background-position: center;
+
+}
+
+.parallex__text{
+    text-align:center;
+    position:absolute;
+    width: 100%;
+    top:40%;
+}
+
+.parallex__text h1{
+    font-size: 60px;
+    font-style: 'Holtwood one SC',cursive;
+}
+
+.parallex__text p{
+    font-size: 28px;
+    font-weight: bold;
+
+}

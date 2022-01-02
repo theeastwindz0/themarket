@@ -1,7 +1,6 @@
 const News = () => {
     return (
         <div>
-            This is News Page
         </div>
     )
 }
