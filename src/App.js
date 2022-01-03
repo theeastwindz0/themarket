@@ -7,6 +7,7 @@ import News from "./components/Pages/News";
 import About from "./components/Pages/About";
 import PageNotFound from "./components/Pages/PageNotFound";
 import Header2 from "./components/BasicComp/Header2";
+import HeaderFull from "./components/BasicComp/HeaderFull";
 function App() {
 
   const CTPgetButtonLocation=(buttons)=>
@@ -17,10 +18,11 @@ function App() {
   return (
     <>
     <BrowserRouter basename="/themarket">
-    <Header passLocation={CTPgetButtonLocation} />
+    {/* <Header passLocation={CTPgetButtonLocation} /> */}
 
     {/* <Header2/> */}
 
+    <HeaderFull/>
    
     <Routes>
       <Route path='/' exact element={<Home/>}/>

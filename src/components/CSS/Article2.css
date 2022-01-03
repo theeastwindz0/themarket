@@ -17,23 +17,26 @@
 
 .article2{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-columns:33.33% 33.33% 33.33%;
     background-color: inherit;
     padding: 20px;
 }
 
 .article2__box1{
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     background-color:inherit;
     color: inherit;
-    margin: 25px;
-    border-radius: 50px;
-    display: block;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 .article2__box1 img{
- max-width: 400px;
+ width: 90%;
  color: inherit;
  border-radius: 20px;
 
@@ -42,18 +45,37 @@
 .article2__box1 p{
     font-size: 20px;
     background-color: inherit;
+    width: 90%;
 }
 
-@media (max-width:1600px)
+@media (max-width:1000px)
 {
     .article2{
         display: flex;
         flex-direction: column;
     }
     
+
+    .article2__box1{
+        padding: 0;
+        margin: 20px 0;
+    }
+
     .article2__box1 img{
-        width: 100%;
+        width: 90%;
         height: auto;
+    }
+
+    .title h2{
+        font-size: 24px;
+    }
+
+    .title p{
+        font-size: 18px;
+    }
+
+    .article2__box1 p{
+        font-size: 16px;
     }
   
 }

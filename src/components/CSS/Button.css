@@ -3,6 +3,7 @@
     border-radius: 8px;
 }
 
+
 .Button{
     text-align: center;
     padding: 12px;
@@ -15,5 +16,6 @@
 @media (max-width:1000px)
 {
     .Button{
-        }
+
+    }
 }

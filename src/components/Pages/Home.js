@@ -27,7 +27,7 @@ const Home = () => {
         title1:'What is Investing ?',
         title2:'Why to Invest ?',
         title3:'Where to Invest ?',
-        title4:'Why Stock Market >',
+        title4:'Why Stock Market ?',
         para1:'Investing is the act of allocating resources, usually money, with the expectation of generating an income or profit. You can invest in endeavors, such as using money to start a business, or in assets, such as purchasing real estate in hopes of reselling it later at a higher price.',
         para2:'Investing your money is as important as earning an income. Prudent investments help secure your life financially by achieving your financial goals for the present and the future. Investing helps you to generate a parallel stream of income, create more wealth, and earn returns to beat inflation.',
         para3:'You have numerous investment options to choose from. However, you have to ensure that you are investing in only those options that fall under your risk tolerance and serve your requirements.',

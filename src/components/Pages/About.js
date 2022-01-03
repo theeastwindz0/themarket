@@ -20,7 +20,7 @@ function About() {
     title2:'',
     title3:'',
     title4:'',
-    para1:'Stock trading was one of my favourite thing , being busy with the academics I rarely get time for the Intraday trading also programming is something my soul always craved for , its hard to mix up two passions which you love but luckily this isn\'t great a deal , This waas started as a  part of the mini project which surely won\'t end up there , taking this to further level creating some kind of financial product will be my priority .' ,
+    para1:'Stock trading was one of my favourite thing , being busy with the academics I rarely get time for the Intraday trading also programming is something my soul always craved for , its hard to mix up two passions which you love but luckily this isn\'t a great deal , This was started as a  part of the mini project which surely won\'t end up there , taking this to further level creating some kind of financial product will be my priority .' ,
     para2:' ',
     para3:'',
     para4:'',
