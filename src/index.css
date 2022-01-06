@@ -15,7 +15,7 @@ code {
   background-color: white;
   color: black;
 
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 body::-webkit-scrollbar{

@@ -6,6 +6,8 @@ import Container__2 from '../../images/Container__2.jpeg'
 import Container__7 from '../../images/Container__7.jpeg'
 import Article from "../BasicComp/Article"
 import Article2 from "../BasicComp/Article2"
+
+import MobileParallex from '../../images/ParallexMobile__1.jpeg'
 import { useEffect } from "react"
 
 const Home = () => {
@@ -19,9 +21,6 @@ const Home = () => {
         parallexTitle:'THE MARKET',
         parallexPara:'Bulls Make Money, Bears Make Money, Pigs Get Slaughtered',
         colorName: "white",
-        parallexImage: Container__18,
-        parallexTitle: "THE MARKET",
-        parallexText: "Bulls make money, bears make money, pigs get slaughtered ",
         articleImage:Container__6,
         articleImageRad:'4%',
         articleHeading:"",
@@ -39,7 +38,7 @@ const Home = () => {
           image2:Container__2,
           para2:"“A trader needs to be highly skilled and extremely lucky to beat the market consistently. If a trader is highly skilled but not lucky enough or extremely lucky but modestly skilled, he will beat the market occasionally but not consistently. Traders that are modestly skilled and modestly lucky will briefly beat the market but will be behind the market most of the time. Everybody else will lose money on a long-term basis, that is, 90% of the traders.”",
           image3:Container__7,
-          para3:"“Humans are not machines. They analyze information through the lenses of their experience, knowledge, and cognitive biases. All of it makes their perception, their unique viewpoint.”",
+          para3:"“99%+ of traders don't care about Ferraris and yachts. They just want to pay their bills, save a little extra money, and sleep well at night. The only way to do that is to bat 70% or more. Anything less, and these goals are nothing more than fantasy.”",
           heading:"WHAT PROFESSIONAL TRADERS SAY",
           headingQuote:"\"In investing what is comfortable is rarely profitable.\""
         }

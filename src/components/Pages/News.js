@@ -1,7 +1,10 @@
+import NewsFetcher from "../BasicComp/NewsFetcher"
+
 const News = () => {
     return (
-        <div>
-        </div>
+        <>
+        <NewsFetcher/>
+        </>
     )
 }
 

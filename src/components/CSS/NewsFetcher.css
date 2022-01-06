@@ -1,0 +1,41 @@
+.News{
+    display:flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+
+    box-shadow: 0 4px 8px 0 rgb(228, 228, 228);
+
+    transition: 0.5s;
+
+}
+
+.News:hover{
+    transform: scale(1.05);
+}
+.GridLayout2 a{
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+.News img{
+    width:90%;
+    height: auto;
+}
+
+.News h2{
+    width: 90%;
+    text-align: center;
+    font-weight: 800;
+
+}
+.News p{
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+}
+

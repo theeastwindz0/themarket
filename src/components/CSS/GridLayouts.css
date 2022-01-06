@@ -1,0 +1,19 @@
+.GridLayout2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.GridLayout3{
+
+}
+
+.GridLayout4{
+
+}
+
+@media (max-width:1200px){
+.GridLayout2,.GridLayout3,.GridLayout4{
+    display: flex;
+    flex-direction: column;
+}
+}

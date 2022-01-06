@@ -1,8 +1,13 @@
 .SubMenu{
+   
     padding: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    background-color: inherit;
+    
+
 }
 
 .SubMenu__text{
@@ -33,7 +38,6 @@
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
     transition: .4s;
   }
 .slider:before {
@@ -44,7 +48,6 @@
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
@@ -52,17 +55,12 @@
     background-color: purple;
   }
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px purple;
-  }
+ 
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }

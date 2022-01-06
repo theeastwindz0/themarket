@@ -21,7 +21,7 @@ function App() {
 
 
     <HeaderFull/>
-    <SubMenu/>
+    {/* <SubMenu/> */}
    
     <Routes>
       <Route path='/' exact element={<Home/>}/>
