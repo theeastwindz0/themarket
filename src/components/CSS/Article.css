@@ -66,4 +66,9 @@
     height: auto;
     width: 100%;
 }
+
+.article__title{
+    font-size: 20px;
 }
+}
+

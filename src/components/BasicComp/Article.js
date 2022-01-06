@@ -15,7 +15,7 @@ function Article(props) {
         </div>
         <div className='article'>
             <div  className='article__container__box-1'>
-                <img  src={props.dataToSend.articleImage}/>
+                <img style={{borderRadius:props.dataToSend.articleImageRad}} src={props.dataToSend.articleImage}/>
             </div>
             <div className='article__container__box-2'>
                 <h3>{props.dataToSend.title1}</h3>

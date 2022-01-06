@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "./components/BasicComp/Footer";
-import Header from "./components/BasicComp/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Pages/Home";
 import News from "./components/Pages/News";
 import About from "./components/Pages/About";
 import PageNotFound from "./components/Pages/PageNotFound";
-import Header2 from "./components/BasicComp/Header2";
 import HeaderFull from "./components/BasicComp/HeaderFull";
+import SubMenu from "./components/BasicComp/SubMenu";
+
 function App() {
 
   const CTPgetButtonLocation=(buttons)=>
@@ -18,11 +18,10 @@ function App() {
   return (
     <>
     <BrowserRouter basename="/themarket">
-    {/* <Header passLocation={CTPgetButtonLocation} /> */}
 
-    {/* <Header2/> */}
 
     <HeaderFull/>
+    <SubMenu/>
    
     <Routes>
       <Route path='/' exact element={<Home/>}/>

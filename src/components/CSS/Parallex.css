@@ -5,6 +5,7 @@
     background-attachment: fixed;
     image-resolution: 1366px 768px;
     background-position: center;
+    color: white;
 
 }
 
@@ -13,15 +14,18 @@
     position:absolute;
     width: 100%;
     top:40%;
+    color: inherit;
 }
 
 .parallex__text h1{
-    font-size: 60px;
-    font-style: 'Holtwood one SC',cursive;
+    font-size: 40px;
+    font-family: 'Holtwood one SC',cursive;
 }
 
 .parallex__text p{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
+    font-family: 'Holtwood one SC',cursive;
+
 
 }

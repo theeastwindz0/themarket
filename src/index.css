@@ -12,8 +12,10 @@ code {
 }
 
 #root{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+
+  transition: 0.5s;
 }
 
 body::-webkit-scrollbar{

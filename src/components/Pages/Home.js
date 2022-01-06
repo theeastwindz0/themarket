@@ -23,6 +23,7 @@ const Home = () => {
         parallexTitle: "THE MARKET",
         parallexText: "Bulls make money, bears make money, pigs get slaughtered ",
         articleImage:Container__6,
+        articleImageRad:'4%',
         articleHeading:"",
         title1:'What is Investing ?',
         title2:'Why to Invest ?',
@@ -45,13 +46,13 @@ const Home = () => {
 
     }
     return (
-        <div>
+        <>
             <Parallex dataToSend={dataToSend}/>
             <Article dataToSend={dataToSend}/>
             <Article2 dataToSend={dataToSend}/>
 
             
-        </div>
+        </>
     )
 }
 

@@ -1,6 +1,6 @@
 .Button:hover{
-    background-color: rebeccapurple;
-    border-radius: 8px;
+    border:1px solid purple;
+    border-radius: 10px;
 }
 
 
@@ -9,9 +9,15 @@
     padding: 12px;
     text-decoration: none;
     color: inherit;
-    margin: 0px 10px;
+    margin: 4px 10px;
     font-family: 'Holtwood one SC',cursive;
+    transition: .5s ease-in;
+
 }
+
+
+
+
 
 @media (max-width:1000px)
 {

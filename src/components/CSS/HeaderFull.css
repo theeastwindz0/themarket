@@ -1,5 +1,38 @@
+.HeaderShow{
+    background-color: inherit;
+    padding: 20px ;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderShow__left{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Holtwood one SC', cursive;
+}
+
+.HeaderShow img{
+    max-height: 50px;
+}
+
+.HeaderShow__right{
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.HeaderShow__right:hover{
+    color: purple;
+}
+
 .HeaderFull{
-background-color: black;
+background-color: inherit;
 opacity: 0.9;
 
 height: 100%;
@@ -7,8 +40,10 @@ width: 100%;
 
 position: fixed;
 top: 0;
-left: 0;
+left: -100%;
 z-index: 2;
+
+transition:0.5s;
 
 display: flex;
 align-items: center;
@@ -18,8 +53,48 @@ justify-content: center;
 
 .HeaderFull__overlay{
     opacity: 1;
-    width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
+
+
+.overlay__button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.overlay__button:hover{
+    color: purple;
+}
+
+@media (max-width:1000px)
+{
+    .HeaderShow__right {
+        font-size: 30px;
+    }
+
+    .HeaderShow__left{
+        font-size: 20px;
+    }
+
+
+    .HeaderShow img{
+        max-height: 40px;
+    }
+
+    .overlay__button{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+

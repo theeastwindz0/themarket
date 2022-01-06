@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
 import '../CSS/Button.css'
 const Button = (props) => {
+    
     return (
        <>
-
        {props.buttons.map((button,key)=>(
-           <Link className='Button' to={button.location}>{button.title}</Link>
+           <Link onClick={props.toggleOff} className='Button' to={button.location}>{button.title}</Link>
        ))}
-       
-       
-
        </>
     )
 }
