@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/themarket/static/css/main.20d976d6.css",
-    "main.js": "/themarket/static/js/main.5614e1d5.js",
+    "main.css": "/themarket/static/css/main.a4236309.css",
+    "main.js": "/themarket/static/js/main.fb53c552.js",
     "static/media/Container__1.jpg": "/themarket/static/media/Container__1.7849561e0e0027582c38.jpg",
     "static/media/Container__18.jpeg": "/themarket/static/media/Container__18.efd973e3c680e4097440.jpeg",
     "static/media/Container__2.jpeg": "/themarket/static/media/Container__2.91813003950338440496.jpeg",
@@ -12,11 +12,11 @@
     "static/media/about_the_developer.jpeg": "/themarket/static/media/about_the_developer.581b72da8a131a87b176.jpeg",
     "static/media/themarket.png": "/themarket/static/media/themarket.3747d43c914cc83e2049.png",
     "index.html": "/themarket/index.html",
-    "main.20d976d6.css.map": "/themarket/static/css/main.20d976d6.css.map",
-    "main.5614e1d5.js.map": "/themarket/static/js/main.5614e1d5.js.map"
+    "main.a4236309.css.map": "/themarket/static/css/main.a4236309.css.map",
+    "main.fb53c552.js.map": "/themarket/static/js/main.fb53c552.js.map"
   },
   "entrypoints": [
-    "static/css/main.20d976d6.css",
-    "static/js/main.5614e1d5.js"
+    "static/css/main.a4236309.css",
+    "static/js/main.fb53c552.js"
   ]
 }
