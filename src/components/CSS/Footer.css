@@ -2,4 +2,58 @@
     padding: 20px 0px;
     background-color: inherit;
     text-align: center;
+    margin: 0px 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Footer img{
+    max-height: 150px;
+}
+
+
+
+.logo{
+    font-size: 24px;
+    margin: 8px;
+}
+
+.Footer_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer_box a{
+    text-decoration: none;
+    color: inherit;
+    margin: 5px;
+}
+.button{
+
+    transition: 0.5s;
+    width: 20%;
+}
+
+
+.button:hover
+{
+    color: purple;
+}
+
+@media (max-width:1000px)
+{
+    .Footer{
+        flex-direction: column;
+    }
+
+    .Footer__middle{
+        order: 3;
+    }
+
+    .Footer_box{
+        border-bottom: 1px purple solid;
+    }
 }

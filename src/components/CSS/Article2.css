@@ -59,6 +59,7 @@
     .article2__box1{
         padding: 0;
         margin: 20px 0;
+        border-bottom: 2px purple solid;
     }
 
     .article2__box1 img{

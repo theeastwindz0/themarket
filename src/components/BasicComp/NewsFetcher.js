@@ -80,8 +80,8 @@ class NewsFetcher extends React.Component{
                 <div className="GridLayout2">
                     {
                         this.state.NewsTitle.map((title,i)=>(
-                            <a href={this.state.NewsUrl[i]} target='_blank'>
-                            <div className="News">
+                            <a key={i} href={this.state.NewsUrl[i]} target='_blank'>
+                            <div  className="News">
                     <img src={this.state.NewsImage[i]}/>
                     <p>SOURCE : {this.state.NewsSourceName[i]}</p>
                     <h2>{this.state.NewsTitle[i]}</h2>

@@ -1,9 +1,3 @@
-.Button:hover{
-    border:1px solid purple;
-    border-radius: 10px;
-}
-
-
 .Button{
     text-align: center;
     padding: 12px;
@@ -14,10 +8,10 @@
     transition: .5s ease-in;
 
 }
-
-
-
-
+.Button:hover{
+    border:1px solid purple;
+    border-radius: 10px;
+}
 
 @media (max-width:1000px)
 {

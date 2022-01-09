@@ -7,7 +7,7 @@ import logo from '../../images/themarket.png'
 import SubMenu from './SubMenu'
 
 
-const HeaderFull = () => {
+const HeaderFull = (props) => {
 
     const buttons=[{
         title:'HOME',
@@ -26,8 +26,7 @@ const HeaderFull = () => {
         location:'about'
     }]
 
-   
-
+    props.getButtons(buttons);
     function navToggleOn()
     {
         document.getElementById('overlay').style.left='0%';

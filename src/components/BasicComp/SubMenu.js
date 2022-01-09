@@ -23,6 +23,7 @@ const SubMenu = () => {
     return (
         <div className="SubMenu">
             <div className='SubMenu__text'>{modeTitle}</div>
+            
             <div>
             <label className='switch'>
                 <input type='checkbox' onClick={CheckboxButton}/>
