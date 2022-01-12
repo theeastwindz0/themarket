@@ -1,6 +1,7 @@
 import React from "react";
 import '../CSS/NewsFetcher.css'
 import '../CSS/GridLayouts.css'
+import { useState } from "react/cjs/react.development";
 
 
 class NewsFetcher extends React.Component{
@@ -8,6 +9,9 @@ class NewsFetcher extends React.Component{
     constructor(props)
     {
         super(props);
+
+        
+        
         this.state={
             NewsTitle:[],
             NewsDescription:[],
@@ -15,9 +19,22 @@ class NewsFetcher extends React.Component{
             NewsUrl:[],
             NewsImage:[],
             NewsSourceName:[],
-            NewsPublishedAt:[]
+            NewsPublishedAt:[],
+            searchKey:this.props.searchKey
         }
     }
+
+
+        //use State does not work in class component so we use componentDidUpdate function 
+
+        componentDidUpdate(prevProps)
+        {
+            if(this.props.searchKey!==prevProps.searchKey)
+            {
+                this.setState({searchKey:this.props.searchKey})
+                this.FetchNews();
+            }
+        }
 
         componentDidMount()
         {
@@ -26,10 +43,10 @@ class NewsFetcher extends React.Component{
 
         FetchNews()
         {
+            const searchKey='nyse';
             const pointerToThis=this;
-            const searchKey='nyse'
             const API_KEY='811c3dd1f23caeab7fccd24499cc3146';
-            const API_CALL='https://gnews.io/api/v4/search?q='+searchKey+'&token='+API_KEY;
+            const API_CALL='https://gnews.io/api/v4/search?q='+this.props.searchKey+'&token='+API_KEY;
 
             const NewsTitleFunction=[];
             const NewsDescriptionFunction=[];

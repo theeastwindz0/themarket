@@ -42,10 +42,10 @@ function App() {
       buttonsRef.push(button)
     ))
 
-    console.log('Inside' +buttonsRef)
+    // console.log('Inside' +buttonsRef)
   //  buttonsRef=buttons;
   }
-  console.log('Outside' +buttonsRef);
+  // console.log('Outside' +buttonsRef);
 
  
   

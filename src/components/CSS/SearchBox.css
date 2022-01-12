@@ -1,0 +1,35 @@
+.SearchBox{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.SearchBox>*{
+    margin: 10px;
+    padding: 12px;
+}
+
+.SearchBox input{
+    width: 80%;
+    font-size: 14px;
+    outline: none;
+}
+
+.SearchBox button{
+    width: 15%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.SearchBox button:hover{
+    border: 1px solid purple;
+    background-color: whitesmoke;
+    
+}
+
+@media (max-width:1000px)
+{
+    .SearchBox button{
+        width: 20%;
+    }
+}
