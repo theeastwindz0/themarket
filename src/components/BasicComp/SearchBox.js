@@ -1,11 +1,12 @@
-import { useState } from 'react/cjs/react.development'
 import '../CSS/SearchBox.css'
+import {useState} from 'react';
 const SearchBox = (props) => {
     const [search,setSearch]=useState('');
     const InputHandler=(event)=>
     {
         setSearch(event.target.value);
     }
+    
 
     const onSubmitHandler=()=>
     {

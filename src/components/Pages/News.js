@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development"
+import { useState } from "react";
 import NewsFetcher from "../BasicComp/NewsFetcher"
 import SearchBox from "../BasicComp/SearchBox"
 
