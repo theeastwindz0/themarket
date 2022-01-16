@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/themarket/static/css/main.555dc9b4.css",
-    "main.js": "/themarket/static/js/main.46cc538e.js",
+    "main.css": "/themarket/static/css/main.694b1f7f.css",
+    "main.js": "/themarket/static/js/main.181c1de1.js",
     "static/media/Container__1.jpg": "/themarket/static/media/Container__1.7849561e0e0027582c38.jpg",
     "static/media/ParallexMobile__1.jpeg": "/themarket/static/media/ParallexMobile__1.50701a982a723930c467.jpeg",
     "static/media/Container__18.jpeg": "/themarket/static/media/Container__18.efd973e3c680e4097440.jpeg",
@@ -13,11 +13,11 @@
     "static/media/about_the_developer.jpeg": "/themarket/static/media/about_the_developer.581b72da8a131a87b176.jpeg",
     "static/media/themarket.png": "/themarket/static/media/themarket.3747d43c914cc83e2049.png",
     "index.html": "/themarket/index.html",
-    "main.555dc9b4.css.map": "/themarket/static/css/main.555dc9b4.css.map",
-    "main.46cc538e.js.map": "/themarket/static/js/main.46cc538e.js.map"
+    "main.694b1f7f.css.map": "/themarket/static/css/main.694b1f7f.css.map",
+    "main.181c1de1.js.map": "/themarket/static/js/main.181c1de1.js.map"
   },
   "entrypoints": [
-    "static/css/main.555dc9b4.css",
-    "static/js/main.46cc538e.js"
+    "static/css/main.694b1f7f.css",
+    "static/js/main.181c1de1.js"
   ]
 }
