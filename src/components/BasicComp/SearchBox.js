@@ -11,10 +11,11 @@ const SearchBox = (props) => {
     const onSubmitHandler=()=>
     {
         props.sendSearch(search);
+        setSearch('');
     }
     return (
         <div className="SearchBox">
-            <input onChange={InputHandler} type='search'></input>
+            <input onChange={InputHandler} value={search} type='search'></input>
             <button onClick={onSubmitHandler}>SEARCH</button>
         
         </div>

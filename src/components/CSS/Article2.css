@@ -33,8 +33,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    box-shadow: 0 4px 8px 0 rgb(228, 228, 228);
     
+    /* animation-name: BoxShadow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+
+    transition: 0.5s;
 }
+
+.article2__box1:hover{
+    transform: rotate(5deg);
+}
+
+@keyframes BoxShadow{
+    0%{box-shadow: 0 4px 8px 2px green;}
+    25%{box-shadow: 0 4px 8px 2px red;}
+    50%{box-shadow: 0 4px 8px 2px purple;}
+    75%{box-shadow: 0 4px 8px 2px hotpink;}
+    100%{box-shadow: 0 4px 8px 2px darkgreen;}
+}
+
 .article2__box1 img{
  width: 90%;
  color: inherit;
@@ -59,7 +80,6 @@
     .article2__box1{
         padding: 0;
         margin: 20px 0;
-        border-bottom: 2px purple solid;
     }
 
     .article2__box1 img{

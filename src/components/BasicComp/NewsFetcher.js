@@ -1,7 +1,6 @@
 import React from "react";
 import '../CSS/NewsFetcher.css'
 import '../CSS/GridLayouts.css'
-import { useState } from "react/cjs/react.development";
 
 
 class NewsFetcher extends React.Component{
@@ -97,14 +96,15 @@ class NewsFetcher extends React.Component{
                 <div className="GridLayout2">
                     {
                         this.state.NewsTitle.map((title,i)=>(
-                            <a key={i} href={this.state.NewsUrl[i]} target='_blank'>
+                            // <a key={i} href={this.state.NewsUrl[i]} target='_blank'>
                             <div  className="News">
                     <img src={this.state.NewsImage[i]}/>
                     <p>SOURCE : {this.state.NewsSourceName[i]}</p>
+                    <p>PUBLISHED AT : {this.state.NewsPublishedAt[i]}</p>
                     <h2>{this.state.NewsTitle[i]}</h2>
-                    <p>{this.state.NewsDescription[i]}</p>
+                    <p>{this.state.NewsDescription[i]}<span className="read__more"><a key={i} href={this.state.NewsUrl[i]} target='_blank'>...Read More</a></span></p>
                 </div>
-                </a>
+                // </a>
                         ))
                     }
                 

@@ -5,12 +5,12 @@
     color: inherit;
     margin: 4px 10px;
     font-family: 'Holtwood one SC',cursive;
-    transition: .5s ease-in;
+    transition: .5s ;
 
+    border:2px solid white;
 }
 .Button:hover{
-    border:1px solid purple;
-    border-radius: 10px;
+    border:2px solid purple;
 }
 
 @media (max-width:1000px)

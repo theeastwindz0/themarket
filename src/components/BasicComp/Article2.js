@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/Article2.css";
 
 function Article2(props) {
+  
   return (
     <>
       <div className="title">

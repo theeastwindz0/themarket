@@ -1,14 +1,16 @@
 .GridLayout2{
-display: grid;
-grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .GridLayout3{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .GridLayout4{
-
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
 @media (max-width:1200px){
