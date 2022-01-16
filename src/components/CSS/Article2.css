@@ -41,11 +41,17 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear; */
 
-    transition: 0.5s;
 }
 
 .article2__box1:hover{
-    transform: rotate(5deg);
+    animation: rotate 4s linear infinite;    
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-5deg);}
 }
 
 @keyframes BoxShadow{

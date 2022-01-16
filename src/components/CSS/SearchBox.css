@@ -29,6 +29,10 @@ justify-content: center;
 
 @media (max-width:1000px)
 {
+
+    .SearchBox>*{
+        margin: 10px 20px;
+    }
     .SearchBox button{
         width: 20%;
     }

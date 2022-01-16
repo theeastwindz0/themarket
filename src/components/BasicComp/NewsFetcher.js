@@ -1,6 +1,7 @@
 import React from "react";
 import '../CSS/NewsFetcher.css'
 import '../CSS/GridLayouts.css'
+import Spinner from "./Spinner";
 
 
 class NewsFetcher extends React.Component{
@@ -19,7 +20,8 @@ class NewsFetcher extends React.Component{
             NewsImage:[],
             NewsSourceName:[],
             NewsPublishedAt:[],
-            searchKey:this.props.searchKey
+            searchKey:this.props.searchKey,
+            NewsLoading:true
         }
     }
 
@@ -42,7 +44,6 @@ class NewsFetcher extends React.Component{
 
         FetchNews()
         {
-            const searchKey='nyse';
             const pointerToThis=this;
             const API_KEY='811c3dd1f23caeab7fccd24499cc3146';
             const API_CALL='https://gnews.io/api/v4/search?q='+this.props.searchKey+'&token='+API_KEY;
@@ -58,7 +59,15 @@ class NewsFetcher extends React.Component{
             fetch(API_CALL)
             .then(function(response)
             {
-                return response.json();
+                if(response.status!==400 ||response.status!==401 || response.status!==403 || response.status!==429 || response.status!==500 )
+                {
+                    pointerToThis.setState({NewsLoading:false})
+                    return response.json();
+                }
+                else{
+                    throw Error(response.statusText);
+                }
+                
             })
 
             .then(function(data)
@@ -85,6 +94,8 @@ class NewsFetcher extends React.Component{
                     NewsSourceName:NewsSourceNameFunction,
 
                 })
+            }).catch((error)=>{
+                console.log(error);
             })
 
         }
@@ -93,16 +104,19 @@ class NewsFetcher extends React.Component{
         {
             return(
                 <>
+                {this.state.NewsLoading && <Spinner size={'40px'} wheelColor={'purple'} />}
                 <div className="GridLayout2">
+                
                     {
+                        
                         this.state.NewsTitle.map((title,i)=>(
                             // <a key={i} href={this.state.NewsUrl[i]} target='_blank'>
-                            <div  className="News">
+                            <div  className="News" key={i}>
                     <img src={this.state.NewsImage[i]}/>
                     <p>SOURCE : {this.state.NewsSourceName[i]}</p>
                     <p>PUBLISHED AT : {this.state.NewsPublishedAt[i]}</p>
                     <h2>{this.state.NewsTitle[i]}</h2>
-                    <p>{this.state.NewsDescription[i]}<span className="read__more"><a key={i} href={this.state.NewsUrl[i]} target='_blank'>...Read More</a></span></p>
+                    <p>{this.state.NewsDescription[i]}<span className="read__more"><a href={this.state.NewsUrl[i]} target='_blank'>...Read More</a></span></p>
                 </div>
                 // </a>
                         ))

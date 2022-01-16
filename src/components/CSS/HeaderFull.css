@@ -75,6 +75,10 @@ justify-content: center;
 
 @media (max-width:1000px)
 {
+    .HeaderShow{
+        padding: 10px;
+    }
+
     .HeaderShow__right {
         font-size: 30px;
     }

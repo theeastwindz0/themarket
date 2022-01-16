@@ -6,7 +6,7 @@ import SearchBox from "../BasicComp/SearchBox"
 const News = () => {
     
   
-    const [searchKey,setSearchKey]=useState('nyse');
+    const [searchKey,setSearchKey]=useState('stocks');
     const receiveSearch=(search)=>
     {
         if(search.trim().length>0)
