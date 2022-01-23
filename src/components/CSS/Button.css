@@ -7,7 +7,6 @@
     font-family: 'Holtwood one SC',cursive;
     transition: .5s ;
 
-    border:2px solid white;
 }
 .Button:hover{
     border:2px solid purple;
