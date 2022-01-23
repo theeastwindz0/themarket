@@ -6,6 +6,7 @@ import News from "./components/Pages/News";
 import About from "./components/Pages/About";
 import PageNotFound from "./components/Pages/PageNotFound";
 import HeaderFull from "./components/BasicComp/HeaderFull";
+import { VarContextProvider } from "./components/store/VarContext";
 let buttonsRef;
 
 function App() {
@@ -50,8 +51,8 @@ function App() {
  
   
   return (
-    <>
-    <BrowserRouter basename="/themarket">
+    <VarContextProvider>
+    {/* <BrowserRouter basename="/themarket"> */}
 
 
     <HeaderFull getButtons={getButtons}/>
@@ -65,9 +66,9 @@ function App() {
     </Routes>
     <Footer buttons={buttons}/>
 
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     
-    </>
+    </VarContextProvider>
   );
 }
 
