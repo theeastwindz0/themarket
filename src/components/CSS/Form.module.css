@@ -1,0 +1,149 @@
+.form_main {
+  display: flex;
+  justify-content: center;
+
+  margin:40px 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 60%;
+  font-size: 18px;
+  background-color: inherit;
+  font-weight: 800;
+
+  /* box-shadow: 0 4px 8px 0 rgb(192, 192, 192); */
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.form_box_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 14px;
+  margin: 10px;
+}
+
+.form_box_1 > * {
+  margin: 0px 10px;
+}
+
+.form_box_1 :nth-child(2) {
+  width: 60%;
+}
+
+.form_box_1 :nth-child(1) {
+  width: 40%;
+}
+
+.form input,
+textarea {
+  outline: none;
+  border: none;
+  padding: 12px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  height: 20px;
+}
+
+.form input[type="number"],input[type="number"] {
+  -webkit-appearance: none;
+}
+
+.form textarea {
+  resize: none;
+  height: 10em;
+}
+
+.form button,.modal button{
+    border: none;
+    outline: none;
+    padding: 14px;
+    width: 20%;
+    margin: 20px 20px 20px 0px;
+    
+    cursor: pointer;
+    
+    background-color: #efefef;
+    color: black;
+}
+
+.form button {
+ 
+    align-self: flex-start;
+  }
+
+.form button:hover {
+  background-color: purple;
+}
+
+.error {
+  color: red;
+  align-self: center;
+  margin: 0;
+}
+
+.modal{
+position: fixed;
+top: 0;
+
+background-color: rgba(0, 0, 0,0.8);
+
+width: 100vw;
+height:100vh;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+font-size: 24px;
+}
+
+.icons{
+    color: green;
+}
+
+.modal button{
+    width: 100px;
+  padding: 8px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .form {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .form_box_1 {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .form_box_1 > * {
+    margin: 4px 0;
+  }
+
+  .form_box_1 :nth-child(1) {
+    width: 100%;
+  }
+
+  .form_box_1 :nth-child(2) {
+    width: 100%;
+  }
+
+  .form button{
+  width: 40%;
+  }
+
+  .modal{
+      font-size: 18px;
+  }
+}
