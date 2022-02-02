@@ -8,17 +8,11 @@ import About from "./components/Pages/About";
 import PageNotFound from "./components/Pages/PageNotFound";
 import HeaderFull from "./components/BasicComp/HeaderFull";
 import { VarContextProvider } from "./components/store/VarContext";
+import UStop from "./components/Pages/UStop";
 let buttonsRef;
 
 function App() {
 
-  // const CTPgetButtonLocation=(buttons)=>
-  // {
-  //   //Lifting the state up 
-  //   const buttonsRef=buttons;
-  //   }
-
-  //Temporary will be fixed later 
 
   const buttons=[{
     title:'HOME',
@@ -44,10 +38,8 @@ function App() {
       buttonsRef.push(button)
     ))
 
-    // console.log('Inside' +buttonsRef)
-  //  buttonsRef=buttons;
   }
-  // console.log('Outside' +buttonsRef);
+  
 
  
   
@@ -56,7 +48,7 @@ function App() {
     {/* <BrowserRouter basename="/themarket"> */}
 
 
-    <HeaderFull getButtons={getButtons}/>
+    <HeaderFull/>
     {/* <SubMenu/> */}
    
     <Routes>
@@ -64,9 +56,10 @@ function App() {
       <Route path='/news' element={<News/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/ustop' element={<UStop/>}/>
       <Route path='*' element={<PageNotFound/>}/>
     </Routes>
-    <Footer buttons={buttons}/>
+    <Footer/>
 
     {/* </BrowserRouter> */}
     

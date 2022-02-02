@@ -1,0 +1,21 @@
+.Stocks_boxes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.Stocks_box{
+    width:100%;
+}
+
+
+@media (max-width:1300px)
+{
+    .Stocks_boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Stocks_box{
+        margin: 10px auto;
+    }
+}

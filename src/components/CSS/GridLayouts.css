@@ -13,6 +13,14 @@
     grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
+.halfbox{
+    width:40%;
+}
+.testing>*
+{
+    margin:200px;
+}
+
 @media (max-width:1200px){
 .GridLayout2,.GridLayout3,.GridLayout4{
     display: flex;
