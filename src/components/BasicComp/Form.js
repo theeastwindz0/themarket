@@ -4,102 +4,82 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Form = (props) => {
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const [firstnameError, setFirstnameError] = useState(false);
   const [lastnameError, setLastnameError] = useState(false);
-  const [emailError, setEmailError] = useState("");
+  const [emailError, setEmailError] = useState(false);
   const [phoneError, SetPhoneError] = useState(false);
   const [messageError, setMessageError] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
-  //   const [formIsValid, setFormIsValid] = useState(true);
-
-  //   useEffect(() => {
-  //     const identifier = setTimeout(() => {
-  //       setFormIsValid(
-  //         firstnameError === false,
-  //         lastnameError === false,
-  //         phoneError === false,
-  //         messageError === false,
-  //         emailError !== ""
-  //       );
-  //     }, 200);
-
-  //     return () => {
-  //       clearTimeout(identifier);
-  //     };
-  //   }, [firstnameError, lastnameError, phoneError, messageError, emailError]);
-
-  const onEnteringData = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    if (formData.firstname !== "") setFirstnameError(false);
-    if (formData.lastname !== "") setLastnameError(false);
-    if ((formData.email !== "") & formData.email.includes("@"))
-      setEmailError("");
-    if (formData.phone !== "") SetPhoneError(false);
-    if (formData.message !== "") setMessageError(false);
-  };
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    setTimeout(() => {
-        if (formData.firstname === "") setFirstnameError(true);
+    let error = [];
 
-    if (formData.lastname === "") setLastnameError(true);
+    const isFirstNameValid = firstname !== "";
+    const isLastNameValid = lastname !== "";
+    const isPhoneValid = phone !== "";
+    const isEmailValid = email.includes("@");
+    const isMessageValid = message !== "";
 
-    if (formData.phone === "") SetPhoneError(true);
+    if (!isFirstNameValid) {
+      setFirstnameError(true);
+      error.push("error");
+    } else {
+      setFirstnameError(false);
+    }
+    if (!isLastNameValid) {
+      setLastnameError(true);
+      error.push("error");
+    } else {
+      setLastnameError(false);
+    }
+    if (!isPhoneValid) {
+      SetPhoneError(true);
+      error.push("error");
+    } else {
+      SetPhoneError(false);
+    }
+    if (!isEmailValid) {
+      setEmailError(true);
+      error.push("error");
+    } else {
+      setEmailError(false);
+    }
+    if (!isMessageValid) {
+      setMessageError(true);
+      error.push("error");
+    } else {
+      setMessageError(false);
+    }
 
-    if (formData.email === "") setEmailError("Email is required");
+    if (error.length > 0) {
+    } else {
+      const currentDate = new Date();
+      const formDataToSend = {
+        FirstName: firstname,
+        LastName: lastname,
+        PhoneNo: phone,
+        EmailAddress: email,
+        Message: message,
+        Date: currentDate,
+      };
 
-    if (!formData.email.includes("@"))
-      setEmailError("Enter a valid Email Address");
+      setFirstname("");
+      setLastname("");
+      setPhone("");
+      setEmail("");
+      setMessage("");
 
-    }, 2000);
-
- 
-      if (
-        (firstnameError === false,
-        lastnameError === false,
-        phoneError === false,
-        messageError === false,
-        emailError === "")
-      ) {
-        const currentDate = new Date();
-        const formDataToSend = {
-          FirstName: formData.firstname,
-          LastName: formData.lastname,
-          PhoneNo: formData.phone,
-          EmailAddress: formData.email,
-          Message: formData.message,
-          Date: currentDate,
-        };
-        console.log(currentDate);
-
-        setFormData({
-          firstname: "",
-          lastname: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-
-        props.formDataSubmit(formDataToSend);
-        onModalShowHandler();
-      }
-
+      props.formDataSubmit(formDataToSend);
+      onModalShowHandler();
+    }
   };
 
   const onModalShowHandler = () => {
@@ -128,8 +108,8 @@ const Form = (props) => {
           <div className={styles.form_box_1}>
             <label htmlFor="firstname">FIRST NAME</label>
             <input
-              value={formData.firstname}
-              onChange={onEnteringData}
+              value={firstname}
+              onChange={(event) => setFirstname(event.target.value)}
               name="firstname"
               type="text"
             />
@@ -140,8 +120,8 @@ const Form = (props) => {
           <div className={styles.form_box_1}>
             <label htmlFor="lastname">LAST NAME</label>
             <input
-              value={formData.lastname}
-              onChange={onEnteringData}
+              value={lastname}
+              onChange={(event) => setLastname(event.target.value)}
               name="lastname"
               type="text"
             />
@@ -153,19 +133,19 @@ const Form = (props) => {
           <div className={styles.form_box_1}>
             <label htmlFor="email">EMAIL</label>
             <input
-              value={formData.email}
-              onChange={onEnteringData}
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               name="email"
               type="email"
             />
           </div>
-          {emailError && <p className={styles.error}>{emailError}</p>}
+          {emailError && <p className={styles.error}>Email is not Valid.</p>}
 
           <div className={styles.form_box_1}>
             <label htmlFor="phone">PHONE</label>
             <input
-              value={formData.phone}
-              onChange={onEnteringData}
+              value={phone}
+              onChange={(event) => setPhone(event.target.value)}
               name="phone"
               type="number"
               maxLength={10}
@@ -176,9 +156,9 @@ const Form = (props) => {
           <div className={styles.form_box_1}>
             <label htmlFor="message">MESSSAGE</label>
             <textarea
-              value={formData.message}
+              value={message}
               name="message"
-              onChange={onEnteringData}
+              onChange={(event) => setMessage(event.target.value)}
             />
           </div>
           {messageError && <p className={styles.error}>Message is Required</p>}
