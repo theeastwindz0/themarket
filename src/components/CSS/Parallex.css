@@ -31,10 +31,18 @@
 @media (max-width:750px)
 {
     .Parallex{
-        min-height: 500px;
+        min-height: 600px;
         background-attachment: scroll;
     }
     .parallex__text{
-    top: 20%;
+    top: 30%;
+    }
+
+    .parallex__text h1{
+        font-size: 34px;
+    }
+
+    .parallex__text p{
+        font-size: 20px;
     }
 }

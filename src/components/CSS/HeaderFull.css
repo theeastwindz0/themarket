@@ -1,5 +1,6 @@
 .HeaderShow{
-    background-color: inherit;
+    background-color: black;
+    color:white;
     padding: 20px ;
 
     position: sticky;
@@ -66,7 +67,7 @@ justify-content: center;
     right: 20px;
     font-size: 40px;
     cursor: pointer;
-    color: inherit;
+    color: white;
 }
 
 .overlay__button:hover{

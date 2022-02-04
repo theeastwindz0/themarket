@@ -9,6 +9,7 @@ import PageNotFound from "./components/Pages/PageNotFound";
 import HeaderFull from "./components/BasicComp/HeaderFull";
 import { VarContextProvider } from "./components/store/VarContext";
 import UStop from "./components/Pages/UStop";
+import SearchBox from "./components/BasicComp/SearchBox";
 let buttonsRef;
 
 function App() {
@@ -37,31 +38,21 @@ function App() {
     buttons.map((button,key)=>(
       buttonsRef.push(button)
     ))
-
   }
-  
 
- 
-  
   return (
     <VarContextProvider>
-    {/* <BrowserRouter basename="/themarket"> */}
 
-
-    <HeaderFull/>
-    {/* <SubMenu/> */}
-   
+    <HeaderFull/>  
     <Routes>
       <Route path='/' exact element={<Home/>}/>
-      <Route path='/news' element={<News/>}/>
+      <Route path='/news' element={<News/>}/> 
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/ustop' element={<UStop/>}/>
       <Route path='*' element={<PageNotFound/>}/>
     </Routes>
     <Footer/>
-
-    {/* </BrowserRouter> */}
     
     </VarContextProvider>
   );

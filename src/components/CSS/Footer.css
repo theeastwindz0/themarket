@@ -1,9 +1,12 @@
 .Footer{
+    width:100%;
     padding: 20px 0px;
-    background-color: inherit;
     text-align: center;
-    margin: 0px 40px;
+    /* margin: 0px 40px; */
 
+    background-color: black;
+    color:white;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +38,7 @@
 
     transition: 0.5s;
     width: 20%;
+
 }
 
 
@@ -53,6 +57,4 @@
         order: 3;
     }
 
-    .Footer_box{
-    }
 }

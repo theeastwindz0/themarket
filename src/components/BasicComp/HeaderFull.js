@@ -7,6 +7,7 @@ import logo from "../../images/themarket.png";
 import SubMenu from "./SubMenu";
 import ButtonContext from "../store/ButtonContext";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const  HeaderFull = () => {
   function navToggleOn() {
@@ -23,7 +24,9 @@ const  HeaderFull = () => {
         return (
           <React.Fragment>
             <div className="HeaderShow">
-              <img src={logo} />
+              <Link to='/'>
+               <img src={logo} />
+              </Link>
               <a className="HeaderShow__left">THE MARKET</a>
               <div onClick={navToggleOn} className="HeaderShow__right">
                 <FontAwesomeIcon icon={faBars} />
