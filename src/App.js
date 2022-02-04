@@ -9,8 +9,7 @@ import PageNotFound from "./components/Pages/PageNotFound";
 import HeaderFull from "./components/BasicComp/HeaderFull";
 import { VarContextProvider } from "./components/store/VarContext";
 import UStop from "./components/Pages/UStop";
-import SearchBox from "./components/BasicComp/SearchBox";
-let buttonsRef;
+
 
 function App() {
 
