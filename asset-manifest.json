@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/themarket/static/css/main.4db4e058.css",
-    "main.js": "/themarket/static/js/main.548db5ad.js",
+    "main.css": "/themarket/static/css/main.bb3273d6.css",
+    "main.js": "/themarket/static/js/main.59bca812.js",
     "static/media/Container__1.jpg": "/themarket/static/media/Container__1.7849561e0e0027582c38.jpg",
-    "static/media/ParallexMobile__1.jpeg": "/themarket/static/media/ParallexMobile__1.50701a982a723930c467.jpeg",
     "static/media/Container__18.jpeg": "/themarket/static/media/Container__18.efd973e3c680e4097440.jpeg",
     "static/media/Container__2.jpeg": "/themarket/static/media/Container__2.91813003950338440496.jpeg",
     "static/media/Container__7.jpeg": "/themarket/static/media/Container__7.2b9e3b91e4fe46f04a1b.jpeg",
     "static/media/Container__6.jpeg": "/themarket/static/media/Container__6.f7159356c6d479eaa57b.jpeg",
     "static/media/Container__14.jpeg": "/themarket/static/media/Container__14.41987cd44148a880a7f3.jpeg",
     "static/media/Container__17.jpeg": "/themarket/static/media/Container__17.76341c8c077ecbbbf73d.jpeg",
+    "static/media/model_02.jpg": "/themarket/static/media/model_02.17bc0ff4e26849afb27c.jpg",
     "static/media/Container__0.jpg": "/themarket/static/media/Container__0.ba5c974588ce14d3455a.jpg",
     "static/media/about_the_developer.jpeg": "/themarket/static/media/about_the_developer.581b72da8a131a87b176.jpeg",
+    "static/media/model_03.jpg": "/themarket/static/media/model_03.80123df20c0458bda0dc.jpg",
+    "static/media/model_01.jpg": "/themarket/static/media/model_01.8f293a575d040cf87185.jpg",
     "static/media/themarket.png": "/themarket/static/media/themarket.3747d43c914cc83e2049.png",
     "index.html": "/themarket/index.html",
-    "main.4db4e058.css.map": "/themarket/static/css/main.4db4e058.css.map",
-    "main.548db5ad.js.map": "/themarket/static/js/main.548db5ad.js.map"
+    "main.bb3273d6.css.map": "/themarket/static/css/main.bb3273d6.css.map",
+    "main.59bca812.js.map": "/themarket/static/js/main.59bca812.js.map"
   },
   "entrypoints": [
-    "static/css/main.4db4e058.css",
-    "static/js/main.548db5ad.js"
+    "static/css/main.bb3273d6.css",
+    "static/js/main.59bca812.js"
   ]
 }
