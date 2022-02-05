@@ -5,13 +5,13 @@ import VarContext from "../store/VarContext";
 function Article2(props) {
   const varCtx =useContext(VarContext);
   let style;
-  if(varCtx.currentMode==='Light Mode')
-  {
-     style={'boxShadow':'0 4px 8px 0 rgb(228, 228, 228)'}
-  }
-  else{
-     style={'boxShadow':'0 4px 8px 0 rgb(55 55 55)'}
-  }
+  // if(varCtx.currentMode==='Light Mode')
+  // {
+  //    style={'boxShadow':'0 4px 8px 0 rgb(228, 228, 228)'}
+  // }
+  // else{
+  //    style={'boxShadow':'0 4px 8px 0 rgb(55 55 55)'}
+  // }
   
   return (
     <>

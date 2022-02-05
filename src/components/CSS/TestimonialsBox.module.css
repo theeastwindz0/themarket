@@ -22,6 +22,7 @@
 .box_image img{
     width :200px;
     border-radius: 50%;
+    border: 10px double rebeccapurple ;
 }
 
 .box_text{
@@ -51,6 +52,6 @@
     }
 
     .box{
-        border-bottom: 2px solid black;;
+        border-bottom: 2px solid purple;;
     }
 }
