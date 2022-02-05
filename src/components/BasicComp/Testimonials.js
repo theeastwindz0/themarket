@@ -17,7 +17,7 @@ const Testimonials = () => {
     },
     {
       tName:'Alex Jersey',
-      tAbout:'I\'m impressed by the charting software , Improvement could be made.',
+      tAbout:'I\'m impressed by the charting software , Improvements could be made.',
       tImage: model_02,
       stars:4
     },

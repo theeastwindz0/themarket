@@ -1,0 +1,129 @@
+.branding,
+.form :nth-child(1),
+.disclaimer_modal {
+  display: flex;
+}
+
+.branding {
+  justify-content: center;
+  align-items: center;
+}
+
+.branding img {
+  width: 50px;
+}
+.branding_text {
+  font-size: 30px;
+  font-family: "Holtwood one SC", cursive;
+  margin-left: 10px;
+}
+
+.disclaimer_modal {
+  background-color: black;
+  color: white;
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+
+  z-index: 2;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+
+  text-align: center;
+}
+.disclaimer_box {
+  border: 1px solid white;
+
+  padding: 50px;
+
+  width: 40%;
+  margin: 0px auto;
+  height: 60%;
+
+  overflow: auto;
+  line-height: 1.5;
+
+  border-radius: 10px 0 0 10px;
+}
+
+.disclaimer_box p {
+  text-align: left;
+}
+
+.form {
+  text-align: left;
+}
+
+.form input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+.form button {
+  width: 15%;
+  border: none;
+  outline: none;
+
+  display: block;
+  width: 200px;
+
+  padding: 14px;
+
+  text-align: center;
+  margin: 10px auto;
+
+  font-size: 16px;
+
+  color: white;
+}
+
+.disabled_off {
+  background-color: purple;
+  cursor: pointer;
+}
+
+.disabled_on {
+  background-color: #282828;
+  cursor: not-allowed;
+}
+
+.agreement {
+  font-size: 20px;
+  color: purple;
+  margin-left: 4px;
+}
+
+.disclaimer_box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.disclaimer_box::-webkit-scrollbar-thumb {
+  background-color: purple;
+}
+
+.disclaimer_box::-webkit-scrollbar-thumb:hover {
+  background-color: rebeccapurple;
+}
+
+@media (max-width: 750px) {
+  .branding_text {
+    font-size: 20px;
+  }
+
+  .branding img {
+    width: 40px;
+  }
+
+  .disclaimer_box {
+    width: 80%;
+    height: 70%;
+    line-height: 1.2;
+
+    padding: 10px;
+  }
+}
