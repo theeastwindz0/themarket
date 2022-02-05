@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/themarket/static/css/main.bb3273d6.css",
-    "main.js": "/themarket/static/js/main.59bca812.js",
+    "main.css": "/themarket/static/css/main.bfd52ab1.css",
+    "main.js": "/themarket/static/js/main.9fcb7292.js",
     "static/media/Container__1.jpg": "/themarket/static/media/Container__1.7849561e0e0027582c38.jpg",
     "static/media/Container__18.jpeg": "/themarket/static/media/Container__18.efd973e3c680e4097440.jpeg",
     "static/media/Container__2.jpeg": "/themarket/static/media/Container__2.91813003950338440496.jpeg",
+    "static/media/bg_image_04.jpg": "/themarket/static/media/bg_image_04.2801e98404b28f455712.jpg",
     "static/media/Container__7.jpeg": "/themarket/static/media/Container__7.2b9e3b91e4fe46f04a1b.jpeg",
     "static/media/Container__6.jpeg": "/themarket/static/media/Container__6.f7159356c6d479eaa57b.jpeg",
     "static/media/Container__14.jpeg": "/themarket/static/media/Container__14.41987cd44148a880a7f3.jpeg",
@@ -16,11 +17,11 @@
     "static/media/model_01.jpg": "/themarket/static/media/model_01.8f293a575d040cf87185.jpg",
     "static/media/themarket.png": "/themarket/static/media/themarket.3747d43c914cc83e2049.png",
     "index.html": "/themarket/index.html",
-    "main.bb3273d6.css.map": "/themarket/static/css/main.bb3273d6.css.map",
-    "main.59bca812.js.map": "/themarket/static/js/main.59bca812.js.map"
+    "main.bfd52ab1.css.map": "/themarket/static/css/main.bfd52ab1.css.map",
+    "main.9fcb7292.js.map": "/themarket/static/js/main.9fcb7292.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb3273d6.css",
-    "static/js/main.59bca812.js"
+    "static/css/main.bfd52ab1.css",
+    "static/js/main.9fcb7292.js"
   ]
 }
