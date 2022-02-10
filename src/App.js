@@ -11,6 +11,7 @@ import { VarContextProvider } from "./components/store/VarContext";
 import UStop from "./components/Pages/UStop";
 import Disclaimer from "./components/BasicComp/Disclaimer";
 import uStyles from "./components/CSS/Universal.module.css";
+import StockChart from "./components/BasicComp/StockChart";
 
 function App() {
   const [disc, setDisc] = useState(true);
@@ -59,6 +60,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ustop" element={<UStop />} />
+        <Route path='chart' element={<StockChart stockSymbol='tsla'/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

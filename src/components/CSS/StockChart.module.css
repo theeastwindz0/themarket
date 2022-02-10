@@ -1,0 +1,106 @@
+.Stock {
+  margin: 50px;
+  min-height: 400px;
+  min-width: 760px;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.Stock__FullScreen {
+  overflow: hidden;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+.Stock__FullScreen p {
+  display: inline;
+  float: left;
+  margin: 20px 10px;
+  font-weight: bold;
+}
+
+.Stock__FullScreen__Header {
+  display: inline-flex;
+  float: left;
+  margin: 10px 20px;
+  align-items: center;
+}
+
+.Chart_Data {
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay__box__header input[type="text"] {
+  height: 30px;
+  margin: 10px;
+  width: 70%;
+}
+
+.Stock__FullScreen__Header button,
+.overlay__box__header button {
+  background-color: black;
+  padding: 7.5px;
+  text-align: center;
+  border: 1px solid black;
+  color: white;
+  font-family: "Holtwood one SC";
+  cursor: pointer;
+}
+
+.Stock__FullScreen__Header button:hover,
+.overlay__box__header button:hover {
+  background-color: orangered;
+  border: 1px solid white;
+}
+
+.suggestion {
+  padding: 5px;
+  margin: 2px;
+}
+.suggestion:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+
+.Stock__FullScreen__Header__box {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.overlay__box {
+  background-color: white;
+  height: 50%;
+  width: 60%;
+  border-radius: 20px;
+
+  overflow: auto;
+}
+
+.overlay__box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overlay__box::-webkit-scrollbar-track {
+  background-color: black;
+  position: absolute;
+}
+
+.overlay__box::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 20px;
+}
+
+.overlay__box::-webkit-scrollbar-thumb:hover {
+  background-color: rebeccapurple;
+}
+
+@media (max-width:750px)
+{
+    .overlay__box{
+        height: 70%;
+        width: 90%;
+    }
+}

@@ -22,6 +22,10 @@ const ButtonContext = React.createContext({
       title: "USTOP",
       location: "ustop",
     },
+    {
+       title: "CHART",
+       location: "chart" 
+    },
   ],
 });
 
