@@ -32,7 +32,7 @@ const Contact = () => {
        <Parallex dataToSend={dataToSend}/>
          <Form formDataSubmit={contactFormHandler}/>
      </React.Fragment>
-  )
+  ) 
 };
 
 export default Contact;
